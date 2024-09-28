@@ -41,11 +41,11 @@ public class ListImplement {
         //stack
         System.out.println("-------Stack-------");
 
-        Stack s = new Stack<>();
+        Stack<String> s = new Stack<>();
         s.push("khalid");
         s.push("khalid");
         s.push("khalid iqbal");
-        s.push(89);
+        s.push("PPL Courier");
         System.out.println(s);
         System.out.println(s.peek());
         //HasSet
