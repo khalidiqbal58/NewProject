@@ -5,7 +5,7 @@ public class ListImplement {
         //ArrayList
         //List can store duplicate values
         System.out.println("-------ArrayList-------");
-        ArrayList print = new ArrayList<>();
+        ArrayList<Object> print = new ArrayList<>();
         for (int i = 0; i <= 5; i++){
         print.add(i);
 
