@@ -1,3 +1,5 @@
+import com.sun.jdi.Value;
+
 import java.util.*;
 
 public class ListImplement {
@@ -17,22 +19,22 @@ public class ListImplement {
 //        print.add(23);
 //        print.add("my name is");
 //        print.add(345.56f);
-//        print.add("Java collection framwork");
+//        print.add("Java collection");
 //        print.add("my name is");
 //        System.out.println(print);
 
-        //iterator is technical term of loop which is used to print one by one value of list
-        Iterator<Object> itr = print.iterator();
-        while (itr.hasNext()){
-            System.out.println(itr.next());
-        }
+//        //iterator is technical term of loop which is used to print one by one value of list
+//        Iterator<Object> itr = print.iterator();
+//        while (itr.hasNext()){
+//            System.out.println(itr.next());
+//        }
         //Hashmap
         System.out.println("-------HashMap-------");
-        HashMap hm = new HashMap();
-        hm.put("khalid","khalid"); //it can store value like (String , String)
-        hm.put(2,"Khalid Iqbal"); //it can also store values (Integer , String)
-        hm.put(3,'A');
-        hm.put(10,1023.4f);
+        HashMap<Integer, String> hm = new HashMap<>();
+        hm.put(101,"khalid"); //it can store value like (String , String)
+        hm.put(102,"Khalid Iqbal"); //it can also store values (Integer , String)
+        hm.put(1033,"vale");
+        hm.put(104,"Key");
         for (Object i : hm.keySet()){
             System.out.println("key : " + i + " value is " + hm.get(i));
         }
@@ -51,7 +53,7 @@ public class ListImplement {
         //HasSet
         //set does not allow to store duplicate value
         System.out.println("-------HashSet-------");
-        Set s1 = new HashSet<>();
+        Set<Object> s1 = new HashSet<>();
         s1.add(9);
         s1.add(200);
         s1.add("khalid");
@@ -76,7 +78,7 @@ public class ListImplement {
             }
         }
         System.out.println("-------linkedList--------");
-        LinkedList list = new LinkedList<>();
+        LinkedList<String> list = new LinkedList<>();
         list.add("khalid");
         list.add("khalid iqbal");
         list.add("PPl");
